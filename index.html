@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <title>Katik's Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 36px; text-align: center;">Welcome to Katik</h1>
+        <div id="text"><p>Hi Friends, Welcome to Katik :)</p></div>
+        <div id="text"><p>A simple web app that functions to calculate the <a href="#area">area</a> and <a href="#perimeter">perimeter</a> of triangles.</p></div>
+    </div>
+    <header>
+        <h1>Area and Area Calculator of Triangles</h1> 
+    </header>
+    
+    <main>
+    <section>
+        <br/>
+        <img src="assets/kel.png" style="height: 200px; width: 300px;"/>
+            <p>The formula for calculating the base of a triangle</p>
+            <p>A = 1/2 x a x t</p>
+            <p>Description:</p>
+            <p>a = Base</p>
+            <p>t = Height</p><br/>
+        </section>
+
+    <section id="area" class="area">
+        <h1 style="text-align: center;">Calculate the Area of a Triangle</h1>
+        <form>
+            <label for="base">Enter Base Value: </label>
+            <input type="number" id="base" name="base" value="" required>
+            <br><br>
+            <label for="height">Enter height Value: </label>
+            <input type="number" id="height" name="height" value="" required>
+            <br><br>
+            <button type="button" id="calculateLBtn">Calculate</button>
+            <input type="reset" value="Reset">
+            
+        <p id="resultBase"></p>
+    </form>
+</section>
+
+    <section>
+        <img src="assets/kel.png" style="height: 200px; width: 300px;"/>
+        <p>The formula for calculating the perimeter of a triangle</p>
+        <p>P = a + b + c</p>
+        <p>Description:</p>
+        <p>a = Side 1</p>
+        <p>b = Side 2</p>
+        <p>c = Side 3</p><br/>
+    </section>
+
+    <section id="perimeter" class="perimeter">
+    <h1 style="text-align: center;"> Calculate Perimeter of Triangles</h1>
+<form>
+    <label for="firstSide">Side A: </label>
+    <input type="number" id="firstSide" required>
+    <br><br>
+
+    <label for="secondSide">Side B: </label>
+    <input type="number" id="secondSide" required>
+    <br><br>
+
+    <label for="thirdSide">Side C: </label>
+    <input type="number" id="thirdSide" required>
+    <br><br>
+    <button type="button" id="calculateKBtn">Calculate</button>
+    <input type="reset" value="Reset">
+
+    <p id="resultPerim"></p>
+</form>
+</section>
+    </main>
+    
+</body>
+</html>
